@@ -74,9 +74,9 @@
         _gameOver = TRUE;
         _restartButton.visible = TRUE;
         
-        Character.physicsBody.velocity = ccp(0.0f, Character.physicsBody.velocity.y);
-        Character.rotation = 90.f;
-        Character.physicsBody.allowsRotation = FALSE;
+        character.physicsBody.velocity = ccp(0.0f, Character.physicsBody.velocity.y);
+        character.rotation = 90.f;
+        character.physicsBody.allowsRotation = FALSE;
         [character stopAllActions];
         
         CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:0.2f position:ccp(-2, 2)];
