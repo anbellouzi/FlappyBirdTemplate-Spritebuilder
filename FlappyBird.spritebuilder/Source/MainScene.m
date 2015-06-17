@@ -74,9 +74,9 @@
         _gameOver = TRUE;
         _restartButton.visible = TRUE;
         
-        character.physicsBody.velocity = ccp(0.0f, character.physicsBody.velocity.y);
-        character.rotation = 90.f;
-        character.physicsBody.allowsRotation = FALSE;
+        Character.physicsBody.velocity = ccp(0.0f, Character.physicsBody.velocity.y);
+        Character.rotation = 90.f;
+        Character.physicsBody.allowsRotation = FALSE;
         [character stopAllActions];
         
         CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:0.2f position:ccp(-2, 2)];
@@ -118,7 +118,7 @@
 {
     _sinceTouch += delta;
     
-    character.rotation = clampf(character.rotation, -30.f, 90.f);
+    Character.rotation = clampf(character.rotation, -30.f, 90.f);
     
     if (character.physicsBody.allowsRotation) {
         float angularVelocity = clampf(character.physicsBody.angularVelocity, -2.f, 1.f);
