@@ -20,7 +20,7 @@
     
     CCNode *_bush1;
     CCNode *_bush2;
-    NSArray *_bushs;
+    NSArray *_bushes;
     
     NSTimeInterval _sinceTouch;
     
@@ -43,7 +43,7 @@
     
     _clouds = @[_cloud1, _cloud2];
     
-    _bushs = @[_bush1, _bush2];
+    _bushes = @[_bush1, _bush2];
     
     for (CCNode *ground in _grounds) {
         // set collision txpe
